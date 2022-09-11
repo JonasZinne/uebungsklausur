@@ -10,6 +10,12 @@ public class JavaCreateDirectory{
 
     public static void main(String[] args) throws IOException {
 
+        //Ordnerstruktur
+        String fileName = "C:/log/uebungsklausur";
+        Path path = Paths.get(fileName);
+        Files.createDirectories(path);
+        System.out.println("New Directory created !  "+fileName);
+        
         //Heutiges Datum anzeigen lassen
         LocalDateTime todaysDate = LocalDateTime.now();
         System.out.println(todaysDate);
