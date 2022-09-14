@@ -50,7 +50,7 @@ public class Person implements Serializable{
         System.out.println(p1.toString());
         System.out.println(p2.toString());
 
-
+        //Serialisierung des Objekts
         try {
             FileOutputStream fileOut = new FileOutputStream("personen.ser");
             ObjectOutputStream out = new ObjectOutputStream(fileOut);
@@ -63,6 +63,7 @@ public class Person implements Serializable{
             i.printStackTrace();
         }
 
+        //Deserialisierung des Objekts
         Person p3 = null;
         Person p4 = null;
         try {
